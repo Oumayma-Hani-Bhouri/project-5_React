@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom'
+import Navigation from "../Navigation"
+
 
 function Header() {
   return (
-    <nav>
-      <Link to="/">Accueil</Link>
-      <Link to="/">A propos</Link>
-    </nav>
+<div>
+
+    <Navigation/>
+    </div>
   )
 }
 
