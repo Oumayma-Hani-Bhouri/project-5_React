@@ -1,12 +1,14 @@
+import LogoWhite from  "../../assets/images/LogoWhite.svg";
+
+
+
 function Footer() {
     return (
-      <div >
-        <img  alt="Logo Kasa" />
+      <div>
+        <img  src={LogoWhite} alt="Logo Kasa blanc" />  
         <p>
-          <img
-            alt="logo copyright"
-          />
-          2020 Kasa. All rights reserved
+         
+         © 2020 Kasa. All rights reserved 
         </p>
       </div>
     )
