@@ -1,0 +1,42 @@
+@import "../../assets/scss/index.scss";
+@import"../../assets/scss/App.scss";
+
+.banner { 
+    max-width: 1240px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    background: #000;
+    margin-top: 50px;
+    height: 220px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    mix-blend-mode: darken;
+  }
+  
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+  
+  
+  .banner-title {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom:40px;
+  
+ }
