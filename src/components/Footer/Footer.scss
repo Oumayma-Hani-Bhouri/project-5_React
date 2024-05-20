@@ -1,0 +1,33 @@
+@import "../../assets/scss/index.scss";
+@import"../../assets/scss/App.scss";
+
+
+
+.footer-content{
+          display: flex;
+          width: 100%;
+        flex-direction: column;
+         justify-content: flex-end;
+         align-items: center;
+          background-color: $black;
+          margin-top: 50px;
+         padding-top: 66px;
+          padding-bottom: 29px;
+
+    
+        
+    
+           & img {
+               width: 122px;
+                 height: 39px;
+                 margin-bottom: 28px;
+                }
+
+         & p {
+                color: $white;
+               font-size: 24px;
+              font-weight: 500;
+              }
+   
+
+}

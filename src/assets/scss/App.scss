@@ -1,16 +1,27 @@
 @import ".//index.scss";
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    object-fit: cover;
-    max-width: 1440px;
 
-}
-#root {
+* {
+    @include Reset;
+  }
+
+body {
     font-family: Montserrat;
-    max-width: 1240px;
-    margin: auto;
-}
+
+ 
+        #root {
+         
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+           
+          }
+            & main {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               gap: 50px;
+               margin: 0 auto;
+               width: 100%;
+              max-width: 1240px;
+}}
