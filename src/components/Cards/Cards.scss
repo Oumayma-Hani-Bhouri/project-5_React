@@ -1,15 +1,27 @@
 @import "../../assets/scss/index.scss";
-@import"../../assets/scss/App.scss";
+@import "../../assets/scss/App.scss";
 
-.cards-container{
+.cards-container {
+  width: 100%;
+  max-width: 1240px;
+  border-radius: 25px;
+  background: #f6f6f6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 340px;
+  gap: 50px;
+  padding: 56px 50px 43px 50px;
 
-    width:100%;
-    max-width: 1240px;
-    border-radius: 25px;
-    background: #F6F6F6;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 340px;
-    gap:50px;
-    padding: 56px 50px 43px 50px;
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 35px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+    background: transparent;
+  }
 }

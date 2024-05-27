@@ -1,33 +1,32 @@
 @import "../../assets/scss/index.scss";
-@import"../../assets/scss/App.scss";
+@import "../../assets/scss/App.scss";
 
+.footer-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $black;
+  padding-top: 66px;
+  padding-bottom: 29px;
 
+  @media (max-width: 768px) {
+    padding: 66px 121px 55px 120px;
+  }
+  & img {
+    width: 122px;
+    height: 39px;
+    margin-bottom: 28px;
+  }
 
-.footer-content{
-          display: flex;
-          width: 100%;
-        flex-direction: column;
-         justify-content: flex-end;
-         align-items: center;
-          background-color: $black;
-          margin-top: 50px;
-         padding-top: 66px;
-          padding-bottom: 29px;
+  & p {
+    color: $white;
+    font-size: 20px;
+    font-weight: 500;
 
-    
-        
-    
-           & img {
-               width: 122px;
-                 height: 39px;
-                 margin-bottom: 28px;
-                }
-
-         & p {
-                color: $white;
-               font-size: 24px;
-              font-weight: 500;
-              }
-   
-
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
 }

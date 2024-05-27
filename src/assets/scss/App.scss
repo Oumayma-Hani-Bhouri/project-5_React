@@ -1,27 +1,44 @@
 @import ".//index.scss";
 
 * {
-    @include Reset;
-  }
+  @include Reset;
+}
 
 body {
-    font-family: Montserrat;
+  font-family: Montserrat;
 
- 
-        #root {
-         
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 50px;
-           
-          }
-            & main {
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               gap: 50px;
-               margin: 0 auto;
-               width: 100%;
-              max-width: 1240px;
-}}
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1440px) {
+    gap: 35px;
+  }
+  @media (max-width: 768px) {
+    gap: 25px;
+  }
+
+  & main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+
+    @media (max-width: 1024px) {
+      gap: 35px;
+      padding: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+      gap: 20px;
+      padding: 0 20px;
+    }
+  }
+}

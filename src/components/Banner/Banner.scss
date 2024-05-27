@@ -1,41 +1,58 @@
 @import "../../assets/scss/index.scss";
-@import"../../assets/scss/App.scss";
+@import "../../assets/scss/App.scss";
 
-.banner { 
-    width:100%;
-    max-width: 1240px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 25px;
-    background: #000;
-    height: 220px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    mix-blend-mode: darken;
+.banner {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+  background: $black;
+  height: 220px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: darken;
+  margin: 0 100px;
+  @media (max-width: 768px) {
+    border-radius: 10px;
+    height: 111px;
   }
-  
-  
-  .banner-image {
+
+  &-image {
     width: 100%;
     height: 100%;
     border-radius: 25px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     object-fit: cover;
-}
-  
-  
-  .banner-title {
+    @media (max-width: 768px) {
+      border-radius: 10px;
+    }
+  }
+
+  &-title {
     width: 100%;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFF;
+    color: $white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-  
- }
+
+    @media (max-width: 1024px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      text-align: left;
+      padding-left: 50px;
+      span {
+        display: block;
+      }
+    }
+  }
+}

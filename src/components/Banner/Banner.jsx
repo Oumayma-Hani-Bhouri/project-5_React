@@ -1,10 +1,15 @@
-import React from 'react';
-import '../Banner/Banner.scss'; 
+import React from "react";
+import "../Banner/Banner.scss";
 
-const Banner = ({ imageSrc,title,opacity }) => {
+const Banner = ({ imageSrc, title, opacity }) => {
   return (
     <div className="banner">
-      <img src={imageSrc} alt="Banner" className="banner-image" style={{ opacity: opacity }} />
+      <img
+        src={imageSrc}
+        alt="Banner"
+        className="banner-image"
+        style={{ opacity: opacity }}
+      />
       <h1 className="banner-title">{title}</h1>
     </div>
   );

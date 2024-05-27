@@ -1,12 +1,11 @@
 import Error from "../components/Error/Error";
 
 const NotFound = () => {
+  return (
+    <>
+      <Error />
+    </>
+  );
+};
 
-    return(
-        <>
-            <Error />
-        </>
-    )
-}
-
-export default NotFound
+export default NotFound;
