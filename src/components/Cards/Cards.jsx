@@ -9,9 +9,9 @@ const Cards = () => {
 
   return (
     <div className="cards-container">
-      {data.map((item) => (
-        <NavLink key={item.id} to={`./house/${item.id}`}>
-          <HousingCard title={item.title} cover={item.cover} />
+      {data.map((logement) => (
+        <NavLink key={logement.id} to={`./logement/${logement.id}`}>
+          <HousingCard title={logement.title} cover={logement.cover} />
         </NavLink>
       ))}
     </div>
