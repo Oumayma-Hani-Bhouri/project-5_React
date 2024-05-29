@@ -8,18 +8,19 @@
   margin: auto;
   overflow: hidden;
 
-  .carousel__slide {
+  &__slide {
     display: flex;
     align-items: center;
     border-radius: 25px;
   }
 
-  .carousel__image {
+  &__image {
+    object-fit: cover;
     width: 100%;
     transition: transform 0.5s ease-in-out;
   }
 
-  .carousel__controls {
+  &__controls {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -27,23 +28,31 @@
     justify-content: space-between;
     transform: translateY(-50%);
   }
-
-  .carousel__button {
-    border: none;
+  &__button {
+    display: flex;
+    width: auto;
+    height: auto;
     color: white;
-    font-size: 2rem;
     cursor: pointer;
+    padding: 8px 25px 32px 25px;
   }
 
-  .carousel__counter {
+  &__counter {
     position: absolute;
-    margin-bottom: 20px;
+    top: 220px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
     font-size: 18px;
-    text-align: center;
     padding: 5px;
     font-weight: 500;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
