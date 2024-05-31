@@ -1,0 +1,19 @@
+@import "../../assets/scss/index.scss";
+@import "../../assets/scss/App.scss";
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag {
+  border-radius: 10px;
+  background: $red;
+  padding: 6px 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: $white;
+}

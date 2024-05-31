@@ -1,43 +1,71 @@
 @import "../../assets/scss/index.scss";
 @import "../../assets/scss/App.scss";
-.container1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 20px;
 
-  .title-location {
-    display: flex;
-    flex-direction: column;
-
-    h2 {
-      color: $red;
-      margin-bottom: 10px;
-      font-size: 36px;
-      font-weight: 500;
-    }
-    p {
-      color: $black;
-      font-size: 18px;
-      font-weight: 500;
-    }
-  }
-  .Host-container {
+.logement-container {
+  max-width: 1240px;
+  width: 100%;
+  .infos-container {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    h3 {
-      color: #ff6060;
-      text-align: right;
-      font-size: 18px;
-      padding: 10px 0 10px 0;
-      font-weight: 500;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title-location {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          color: $red;
+          margin-bottom: 10px;
+          font-size: 36px;
+          font-weight: 500;
+        }
+        p {
+          color: $black;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
     }
-    img {
-      border-radius: 50%;
-      width: 64px;
-      height: 64px;
+    .container2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .Host-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        h3 {
+          color: #ff6060;
+          text-align: right;
+          font-size: 18px;
+          padding: 10px 0 10px 0;
+          font-weight: 500;
+          white-space: pre-line;
+        }
+        img {
+          border-radius: 50%;
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
+  .Collapse-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+
+    ul li {
+      display: flex;
     }
   }
 }

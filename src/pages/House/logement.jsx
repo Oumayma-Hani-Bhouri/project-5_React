@@ -4,9 +4,10 @@ import list from "../../data.json";
 import { useParams } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import Collapse from "../../components/Collapse/collapse";
+import Tags from "../../components/Tags/tags";
 import "../House/logement.scss";
 
-const LogementCarousel = () => {
+const Logementdetails = () => {
   const { houseId } = useParams();
   const [data] = useState(list);
 
@@ -15,29 +16,43 @@ const LogementCarousel = () => {
   if (!logement) {
     return <Navigate to="/error" />;
   }
-
+  //creation de la liste des equipements
+  const equipementList = logement.equipments.map((equipement, index) => (
+    <li key={index}>{equipement}</li>
+  ));
   return (
-    <div>
+    <div className="logement-container">
       <Carousel images={logement.pictures} />
-      <div className="container1">
-        <div className="title-location">
-          <h2>{logement.title}</h2>
-          <p> {logement.location}</p>
+      <div className="infos-container">
+        <div className="container1">
+          <div className="title-location">
+            <h2>{logement.title}</h2>
+            <p> {logement.location}</p>
+          </div>
+          <div className="tags-container">
+            <Tags tags={logement.tags} />
+          </div>
         </div>
-        <div className="Host-container">
-          <h3>{logement.host.name} </h3>
-          <img
-            src={logement.host.picture}
-            alt={"image de " + logement.host.name}
-          />
+        <div className="container2">
+          <div className="Host-container">
+            <h3>
+              {logement.host.name.split(" ")[0]}
+              <br />
+              {logement.host.name.split(" ")[1]}
+            </h3>
+            <img
+              src={logement.host.picture}
+              alt={"image de " + logement.host.name}
+            />
+          </div>
         </div>
       </div>
-      <div Collapse-container>
+      <div className="Collapse-container">
         <Collapse title="Description" content={logement.description} />
-        <Collapse title="Équipements" content={logement.equipments} />
+        <Collapse title="Équipements" content={<ul> {equipementList}</ul>} />
       </div>
     </div>
   );
 };
 
-export default LogementCarousel;
+export default Logementdetails;
