@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ArrowIcon from "../../assets/images/ArrowIcon.svg";
+import ArrowIcon from "../../assets/images/ArrowIcon.png";
 import "../Collapse/collapse.scss";
 
 const Collapse = ({ title, content }) => {
