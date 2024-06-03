@@ -3,17 +3,33 @@
 
 .tags-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
-}
 
-.tag {
-  border-radius: 10px;
-  background: $red;
-  padding: 6px 30px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  color: $white;
+  @media (max-width: 374px) {
+    gap: 7px;
+  }
+  .tag {
+    display: flex;
+    border-radius: 10px;
+    background: $red;
+    padding: 6px 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+      padding: 6px 10px;
+    }
+    @media (max-width: 374px) {
+      font-size: 8px;
+      padding: 6px 8px;
+    }
+  }
 }

@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import Collapse from "../../components/Collapse/collapse";
 import Tags from "../../components/Tags/tags";
+import Rating from "../../components/Rate/rate";
 import "../House/logement.scss";
 
 const Logementdetails = () => {
@@ -44,6 +45,9 @@ const Logementdetails = () => {
               src={logement.host.picture}
               alt={"image de " + logement.host.name}
             />
+          </div>
+          <div className="rating-container">
+            <Rating rating={logement.rating} />
           </div>
         </div>
       </div>
