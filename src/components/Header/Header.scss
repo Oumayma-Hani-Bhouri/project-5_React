@@ -10,6 +10,7 @@
   flex-direction: row;
   align-items: center;
   margin-top: 45px;
+
   @media (max-width: 1440px) {
     margin-top: 45px;
     padding: 0 100px;
@@ -43,6 +44,9 @@
     list-style: none;
     gap: 55px;
     margin-left: 5px;
+    & .header_nav__link {
+      color: $black;
+    }
 
     @media (max-width: 1024px) {
       gap: 35px;
@@ -50,23 +54,22 @@
     @media (max-width: 768px) {
       gap: 25px;
     }
-  }
 
-  & li {
-    color: $black;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 500;
-    @media (max-width: 1024px) {
-      font-size: 18px;
+    & li a {
+      text-decoration: none;
+      color: $black;
+      font-size: 24px;
+      font-weight: 500;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
-    @media (max-width: 768px) {
-      font-size: 12px;
+    & .header_nav__link-active {
+      color: $black;
+      text-decoration-line: underline;
     }
-  }
-  & .header_nav__link-active {
-    color: $black;
-
-    text-decoration-line: underline;
   }
 }

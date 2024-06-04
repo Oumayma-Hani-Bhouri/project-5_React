@@ -9,22 +9,26 @@ function Header() {
       <img className="header-logo" src={LogoRed} alt="Logo du site" />
       <nav className="header_nav">
         <ul>
-          <NavLink
-            to="/"
-            className={(header_nav__link) =>
-              header_nav__link.isActive ? "header_nav__link-active" : ""
-            }
-          >
-            <li> Accueil </li>
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={(header_nav__link) =>
-              header_nav__link.isActive ? "header_nav__link-active" : ""
-            }
-          >
-            <li> A Propos</li>
-          </NavLink>
+          <li>
+            <NavLink
+              to="/"
+              className={(header_nav__link) =>
+                header_nav__link.isActive ? "header_nav__link-active" : ""
+              }
+            >
+              Accueil
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={(header_nav__link) =>
+                header_nav__link.isActive ? "header_nav__link-active" : ""
+              }
+            >
+              A Propos
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

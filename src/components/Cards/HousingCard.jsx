@@ -5,7 +5,7 @@ const HousingCard = ({ title, cover }) => {
   return (
     <div className="card">
       <img src={cover} alt="la maison" className="card-img" />
-      <h3 className="card-title">{title}</h3>
+      <h2 className="card-title">{title}</h2>
     </div>
   );
 };
