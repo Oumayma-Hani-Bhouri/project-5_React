@@ -1,6 +1,6 @@
 import Error from "../components/Error/Error";
 
-const NotFound = () => {
+const Notfoundpage = () => {
   return (
     <>
       <Error />
@@ -8,4 +8,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default Notfoundpage;
